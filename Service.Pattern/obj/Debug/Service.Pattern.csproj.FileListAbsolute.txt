@@ -1,0 +1,14 @@
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\Service.Pattern.dll.config
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\Service.Pattern.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\Service.Pattern.pdb
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\CRM.Data.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\EntityFramework.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\CRM.Domain.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\CRM.Data.pdb
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\EntityFramework.xml
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\bin\Debug\CRM.Domain.pdb
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\obj\Debug\Service.Pattern.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\Service.Pattern\obj\Debug\Service.Pattern.pdb

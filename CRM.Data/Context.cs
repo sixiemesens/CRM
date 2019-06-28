@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CRM.Data.Configurations;
+using CRM.Data.Conventions;
+using CRM.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,6 +16,15 @@ namespace CRM.Data
         public Context() : base("name=DB")
         {
 
+        }
+        public DbSet<Companies> Company { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+
+            
+            modelBuilder.Conventions.Add(new DateTimeConventions());
+            modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
+            modelBuilder.Configurations.Add(new CompanyConfiguration());
         }
 
     }

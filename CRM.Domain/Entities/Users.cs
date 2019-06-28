@@ -19,5 +19,7 @@ namespace CRM.Domain.Entities
         [Compare("MotDePasse")]
         public string ConfirmMotDePasse { get; set; }
         public Role role { get; set; }
+        public Companies company { get; set; }
+        public int companyFK { get; set; }
     }
 }

@@ -1,0 +1,12 @@
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\CRM.Data.dll.config
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\CRM.Data.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\CRM.Data.pdb
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\CRM.Domain.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\EntityFramework.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\CRM.Domain.pdb
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\EntityFramework.xml
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\obj\Debug\CRM.Data.csprojResolveAssemblyReference.cache
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\obj\Debug\CRM.Data.dll
+c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\obj\Debug\CRM.Data.pdb

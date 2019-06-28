@@ -13,5 +13,6 @@ namespace CRM.Domain.Entities
         public int ModuleId { get; set; }
         public string ModuleName { get; set; }
         public float price { get; set; }
+        public ICollection<CompanyModules> compmodule { get; set; }
     }
 }

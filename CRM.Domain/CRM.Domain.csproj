@@ -53,7 +53,9 @@
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Claims.cs" />
     <Compile Include="Entities\Companies.cs" />
+    <Compile Include="Entities\CompanyModules.cs" />
     <Compile Include="Entities\Customers.cs" />
+    <Compile Include="Entities\Invoices.cs" />
     <Compile Include="Entities\Modules.cs" />
     <Compile Include="Entities\NomComplet.cs" />
     <Compile Include="Entities\Offers.cs" />
