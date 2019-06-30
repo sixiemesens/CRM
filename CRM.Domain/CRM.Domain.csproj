@@ -62,6 +62,7 @@
     <Compile Include="Entities\Packs.cs" />
     <Compile Include="Entities\Products.cs" />
     <Compile Include="Entities\Shops.cs" />
+    <Compile Include="Entities\Stocks.cs" />
     <Compile Include="Entities\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

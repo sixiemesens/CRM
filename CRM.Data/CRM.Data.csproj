@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Configurations\CompanyConfiguration.cs" />
     <Compile Include="Configurations\CompanyModulesConfiguration.cs" />
+    <Compile Include="Configurations\ShopsConfiguration.cs" />
+    <Compile Include="Configurations\StocksConfiguration.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Conventions\DateTimeConventions.cs" />
     <Compile Include="Infrastructure\DatabaseFactory.cs" />
@@ -63,6 +65,10 @@
     <Compile Include="Migrations\201906301145091_VZ.cs" />
     <Compile Include="Migrations\201906301145091_VZ.Designer.cs">
       <DependentUpon>201906301145091_VZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906302046597_update-stocks.cs" />
+    <Compile Include="Migrations\201906302046597_update-stocks.Designer.cs">
+      <DependentUpon>201906302046597_update-stocks.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +86,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906301145091_VZ.resx">
       <DependentUpon>201906301145091_VZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906302046597_update-stocks.resx">
+      <DependentUpon>201906302046597_update-stocks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

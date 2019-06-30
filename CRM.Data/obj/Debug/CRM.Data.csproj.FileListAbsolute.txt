@@ -24,3 +24,4 @@ C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.dll
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.pdb
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.VZ.resources
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.GenerateResource.Cache
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.updatestocks.resources

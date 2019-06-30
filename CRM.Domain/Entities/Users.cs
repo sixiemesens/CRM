@@ -21,5 +21,7 @@ namespace CRM.Domain.Entities
         public Role role { get; set; }
         public Companies company { get; set; }
         public int companyFK { get; set; }
+        public Shops shop { get; set; }
+        public int shopFK { get; set; }
     }
 }
