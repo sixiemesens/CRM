@@ -13,7 +13,7 @@ namespace CRM.Data.Configurations
         public CompanyModulesConfiguration()
         {
             HasRequired<Companies>(t => t.company).WithMany(t => t.compmodule).WillCascadeOnDelete(true);
-            HasRequired<Modules>(m => m.module).WithMany(m => m.compmodule).WillCascadeOnDelete(true);
+            //HasRequired<Modules>(m => m.module).WithMany(m => m.compmodule).WillCascadeOnDelete(true);
         }
     }
 }

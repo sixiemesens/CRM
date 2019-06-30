@@ -18,6 +18,7 @@ namespace CRM.Data
 
         }
         public DbSet<Companies> Company { get; set; }
+        public DbSet<Users> User { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 

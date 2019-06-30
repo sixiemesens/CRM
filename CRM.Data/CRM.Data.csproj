@@ -60,6 +60,14 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201906301151231_v0.cs" />
+    <Compile Include="Migrations\201906301151231_v0.Designer.cs">
+      <DependentUpon>201906301151231_v0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906301159281_v1.cs" />
+    <Compile Include="Migrations\201906301159281_v1.Designer.cs">
+      <DependentUpon>201906301159281_v1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,7 +81,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201906301151231_v0.resx">
+      <DependentUpon>201906301151231_v0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301159281_v1.resx">
+      <DependentUpon>201906301159281_v1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
