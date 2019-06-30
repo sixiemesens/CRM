@@ -14,3 +14,19 @@ c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Service\bin\Debug\En
 c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Service\obj\Debug\CRM.Service.csprojResolveAssemblyReference.cache
 c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Service\obj\Debug\CRM.Service.dll
 c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Service\obj\Debug\CRM.Service.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\CRM.Service.dll.config
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\CRM.Service.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\CRM.Service.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\CRM.Data.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\CRM.Domain.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\EntityFramework.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\Service.Pattern.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\CRM.Data.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\CRM.Domain.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\Service.Pattern.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\EntityFramework.xml
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\obj\Debug\CRM.Service.csprojResolveAssemblyReference.cache
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\obj\Debug\CRM.Service.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Service\obj\Debug\CRM.Service.pdb

@@ -11,7 +11,7 @@ namespace CRM.Domain.Entities
     public class Users
     {
         [Key]
-        private int UserId { get; set; }
+        public int UserId { get; set; }
         public NomComplet UserName { get; set; }
         public string Email { get; set; }
         [DataType(DataType.Password)]
