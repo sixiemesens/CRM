@@ -25,3 +25,5 @@ C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.pdb
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v0.resources
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.GenerateResource.Cache
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v1.resources
+C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v2.resources
+C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v21.resources

@@ -16,6 +16,7 @@ namespace CRM.Domain.Entities
         public Address CustomerAddress { get; set; }
         public Sexe sexe { get; set; }
         public string CustomerPhone { get; set; }
+        public virtual ICollection<Claims> Reclamation { get; set; }
 
 
     }

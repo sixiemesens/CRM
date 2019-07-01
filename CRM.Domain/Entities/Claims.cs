@@ -15,6 +15,9 @@ namespace CRM.Domain.Entities
         public string ClaimSubject { get; set; }
         public string description { get; set; }
         public DateTime ClaimStartDate { get; set; }
-
+        public Status Status { get; set; }
+        public string ClaimType { get; set; }
+        public virtual ICollection<Users> Commercial { get; set; }
+        public virtual ICollection<Customers> FinalClient { get; set; }
     }
 }

@@ -22,5 +22,6 @@ namespace CRM.Domain.Entities
         public Role role { get; set; }
         public Companies company { get; set; }
         public int companyFK { get; set; }
+        public virtual ICollection<Claims> Reclamation { get; set; }
     }
 }
