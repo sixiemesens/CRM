@@ -8,7 +8,8 @@ namespace CRM.Domain.Entities
 {
     public class NomComplet
     {
-        private string nom { get; set; }
-        private string prenom { get; set; }
+        public string nom { get; set; }
+        public string prenom { get; set; }
+   
     }
 }

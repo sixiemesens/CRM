@@ -17,4 +17,3 @@ C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\obj\Debug\CRM.Domain.dll
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\obj\Debug\CRM.Domain.pdb
-C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\obj\Debug\CRM.Domain.csprojResolveAssemblyReference.cache

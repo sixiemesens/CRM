@@ -50,7 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="IShopsService.cs" />
+    <Compile Include="IStocksService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopsService.cs" />
+    <Compile Include="StocksService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CRM.Data\CRM.Data.csproj">

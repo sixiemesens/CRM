@@ -10,9 +10,9 @@ namespace CRM.Domain.Entities
 {
     public class Stocks
     {
-        [Key, Column(Order = 0)]
-        public int ProductId { get; set; }
         [Key, Column(Order = 1)]
+        public int ProductId { get; set; }
+        [Key, Column(Order = 2)]
         public int ShopId { get; set; }
 
         public int Stocknbr { get; set; }

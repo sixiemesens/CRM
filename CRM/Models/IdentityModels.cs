@@ -29,5 +29,11 @@ namespace CRM.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Shops> Shops { get; set; }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Stocks> Stocks { get; set; }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Products> Products { get; set; }
     }
 }

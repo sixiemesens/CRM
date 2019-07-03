@@ -24,8 +24,9 @@ namespace CRM.Data
 
             
             modelBuilder.Conventions.Add(new DateTimeConventions());
-          //modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
+          modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
            modelBuilder.Configurations.Add(new CompanyConfiguration());
+            modelBuilder.Configurations.Add(new ShopsConfiguration());
         }
 
     }

@@ -69,7 +69,7 @@ namespace CRM.Data.Infrastructure
             {
                 Query = Query.OrderBy(orderBy);
             }
-            return Query;
+            return Query.AsEnumerable();
         }
         public T Get(Expression<Func<T, bool>> where)
         {

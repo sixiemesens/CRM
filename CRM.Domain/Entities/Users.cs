@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,11 @@ namespace CRM.Domain.Entities
         [Compare("MotDePasse")]
         public string ConfirmMotDePasse { get; set; }
         public Role role { get; set; }
-        public Companies company { get; set; }
-        public int companyFK { get; set; }
-        public Shops shop { get; set; }
-        public int shopFK { get; set; }
+        public  virtual Companies company { get; set; }
+       public int companyFK { get; set; }
+        public int? shopFK { get; set; }
+        [ForeignKey("shopFK")]
+        public virtual Shops shop { get; set; }
+       
     }
 }
