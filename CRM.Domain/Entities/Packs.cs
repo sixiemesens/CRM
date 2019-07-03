@@ -10,11 +10,13 @@ namespace CRM.Domain.Entities
     public class Packs
     {
         [Key]
-        public int PackId { get; set; }
+        public int PacksId { get; set; }
         public float PackPrice { get; set; }
         public string PackName { get; set; }
         public DateTime PackStartDate { get; set; }
         public DateTime PackEndDate { get; set; }
+        public virtual Offers Offers { get; set; }
+
 
     }
 }

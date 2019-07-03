@@ -27,6 +27,7 @@ namespace CRM.Data
           modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
            modelBuilder.Configurations.Add(new CompanyConfiguration());
             modelBuilder.Configurations.Add(new ShopsConfiguration());
+            modelBuilder.Configurations.Add(new PackConfiguration());
         }
 
     }

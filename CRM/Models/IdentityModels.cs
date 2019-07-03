@@ -21,7 +21,7 @@ namespace CRM.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("CRM_FINAL", throwIfV1Schema: false)
         {
         }
 
@@ -35,5 +35,9 @@ namespace CRM.Models
         public System.Data.Entity.DbSet<CRM.Domain.Entities.Stocks> Stocks { get; set; }
 
         public System.Data.Entity.DbSet<CRM.Domain.Entities.Products> Products { get; set; }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Packs> Packs { get; set; }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Offers> Offers { get; set; }
     }
 }

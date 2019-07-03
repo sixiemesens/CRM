@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Configurations\CompanyConfiguration.cs" />
     <Compile Include="Configurations\CompanyModulesConfiguration.cs" />
+    <Compile Include="Configurations\PackConfiguration.cs" />
     <Compile Include="Configurations\ShopsConfiguration.cs" />
     <Compile Include="Configurations\StocksConfiguration.cs" />
     <Compile Include="Context.cs" />
@@ -64,25 +65,17 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201907021855495_newN.cs" />
-    <Compile Include="Migrations\201907021855495_newN.Designer.cs">
-      <DependentUpon>201907021855495_newN.cs</DependentUpon>
+    <Compile Include="Migrations\201907031631442_V1.cs" />
+    <Compile Include="Migrations\201907031631442_V1.Designer.cs">
+      <DependentUpon>201907031631442_V1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907021900319_n.cs" />
-    <Compile Include="Migrations\201907021900319_n.Designer.cs">
-      <DependentUpon>201907021900319_n.cs</DependentUpon>
+    <Compile Include="Migrations\201907031637043_V2.cs" />
+    <Compile Include="Migrations\201907031637043_V2.Designer.cs">
+      <DependentUpon>201907031637043_V2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201907021906221_nm.cs" />
-    <Compile Include="Migrations\201907021906221_nm.Designer.cs">
-      <DependentUpon>201907021906221_nm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907021911159_nml.cs" />
-    <Compile Include="Migrations\201907021911159_nml.Designer.cs">
-      <DependentUpon>201907021911159_nml.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907031600533_SS.cs" />
-    <Compile Include="Migrations\201907031600533_SS.Designer.cs">
-      <DependentUpon>201907031600533_SS.cs</DependentUpon>
+    <Compile Include="Migrations\201907031640434_V3.cs" />
+    <Compile Include="Migrations\201907031640434_V3.Designer.cs">
+      <DependentUpon>201907031640434_V3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,20 +91,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907021855495_newN.resx">
-      <DependentUpon>201907021855495_newN.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907031631442_V1.resx">
+      <DependentUpon>201907031631442_V1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021900319_n.resx">
-      <DependentUpon>201907021900319_n.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907031637043_V2.resx">
+      <DependentUpon>201907031637043_V2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021906221_nm.resx">
-      <DependentUpon>201907021906221_nm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907021911159_nml.resx">
-      <DependentUpon>201907021911159_nml.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907031600533_SS.resx">
-      <DependentUpon>201907031600533_SS.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907031640434_V3.resx">
+      <DependentUpon>201907031640434_V3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,3 +17,12 @@ C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\obj\Debug\CRM.Domain.dll
 C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Domain\obj\Debug\CRM.Domain.pdb
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\CRM.Domain.dll.config
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\CRM.Domain.dll
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\CRM.Domain.pdb
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\obj\Debug\CRM.Domain.dll
+C:\Users\Atef\Source\Repos\sixiemesens\CRM\CRM.Domain\obj\Debug\CRM.Domain.pdb
