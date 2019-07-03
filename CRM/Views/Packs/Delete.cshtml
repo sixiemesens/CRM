@@ -1,0 +1,64 @@
+﻿@model CRM.Domain.Entities.Packs
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Packs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Offers.OfferName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Offers.OfferName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackStartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackStartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackEndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackEndDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
