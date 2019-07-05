@@ -18,8 +18,8 @@ namespace CRM.Domain.Entities
         public Address Address { get; set; }
         public bool Activated { get; set; }
         public string TaxNumber { get; set; }
-        public virtual ICollection<Users> Users { get; set; }
-        public virtual ICollection<CompanyModules> compmodule { get; set; }
+        //public virtual ICollection<Users> Users { get; set; }
+        //public virtual ICollection<CompanyModules> compmodule { get; set; }
 
     }
 }

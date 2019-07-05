@@ -21,7 +21,7 @@ namespace CRM.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("name=DB", throwIfV1Schema: false)
         {
         }
 
@@ -29,5 +29,9 @@ namespace CRM.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Claims> Claims { get; set; }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Customers> Customers { get; set; }
     }
 }

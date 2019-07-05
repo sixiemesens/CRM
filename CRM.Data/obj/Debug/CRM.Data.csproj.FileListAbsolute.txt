@@ -20,10 +20,7 @@ C:\Users\g534616\Source\Repos\CRM\CRM.Data\bin\Debug\CRM.Domain.pdb
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\bin\Debug\EntityFramework.xml
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.csprojResolveAssemblyReference.cache
-C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.dll
-C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.pdb
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v0.resources
 C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.GenerateResource.Cache
-C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v1.resources
-C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v2.resources
-C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.v21.resources
+C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.dll
+C:\Users\g534616\Source\Repos\CRM\CRM.Data\obj\Debug\CRM.Data.pdb

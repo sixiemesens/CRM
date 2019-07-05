@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace CRM.Domain.Entities
 {
+    //Complex Type
     public class NomComplet
     {
-        private string nom { get; set; }
-        private string prenom { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
     }
 }

@@ -17,15 +17,17 @@ namespace CRM.Data
         {
 
         }
-        public DbSet<Companies> Company { get; set; }
-        public DbSet<Users> User { get; set; }
+        //public DbSet<Companies> Company { get; set; }
+        //public DbSet<Users> Users { get; set; }
+        public DbSet<Customers> Customers { get; set; }
+        public DbSet<Claims> Claims { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
-            
+           // modelBuilder.Configurations.Add(new ClaimsConfiguration());
             modelBuilder.Conventions.Add(new DateTimeConventions());
-            modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
-            modelBuilder.Configurations.Add(new CompanyConfiguration());
+            //modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
+            //modelBuilder.Configurations.Add(new CompanyConfiguration());
         }
 
     }

@@ -11,17 +11,18 @@ namespace CRM.Domain.Entities
     public class Users
     {
         [Key]
-        //private int UserId { get; set; }
         public int UserId { get; set; }
-        public NomComplet UserName { get; set; }
+        public NomComplet NomComplet { get; set; }
+        [EmailAddress]
         public string Email { get; set; }
         [DataType(DataType.Password)]
         public string MotDePasse { get; set; }
         [Compare("MotDePasse")]
         public string ConfirmMotDePasse { get; set; }
         public Role role { get; set; }
-        public Companies company { get; set; }
-        public int companyFK { get; set; }
-        public virtual ICollection<Claims> Reclamation { get; set; }
+        //public List<Claims> Claims { get; set; }
+        //public Companies company { get; set; }
+        //public int companyFK { get; set; }
+
     }
 }
