@@ -21,7 +21,7 @@ namespace CRM.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("name=DB", throwIfV1Schema: false)
+            : base("CRM_FINAL", throwIfV1Schema: false)
         {
         }
 
