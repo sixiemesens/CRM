@@ -8,7 +8,7 @@ namespace CRM.Domain.Entities
 {
     public class Address
     {
-        //sex
+        
         public string StreetName { get; set; }
         public int number { get; set; }
         public string City { get; set; }
