@@ -16,8 +16,8 @@ namespace CRM.Domain.Entities
         public string ShopPhone { get; set; }
         public string ShopType { get; set; }
         public string OpeningTime { get; set; }
-
-
+        public ICollection<Stocks> stock { get; set; }
+        public ICollection<Users> Users { get; set; }
 
     }
 }

@@ -1,0 +1,58 @@
+﻿@model CRM.Domain.Entities.Shops
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shops</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShopName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShopName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShopPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShopPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShopType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShopType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpeningTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpeningTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShopId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

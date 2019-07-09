@@ -18,13 +18,15 @@ namespace CRM.Data
 
         }
         public DbSet<Companies> Company { get; set; }
+        public DbSet<Users> user { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
             
             modelBuilder.Conventions.Add(new DateTimeConventions());
-            modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
-            modelBuilder.Configurations.Add(new CompanyConfiguration());
+          modelBuilder.Configurations.Add(new CompanyModulesConfiguration());
+           modelBuilder.Configurations.Add(new CompanyConfiguration());
+            modelBuilder.Configurations.Add(new ShopsConfiguration());
         }
 
     }

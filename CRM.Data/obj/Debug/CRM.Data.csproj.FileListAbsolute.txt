@@ -10,3 +10,46 @@ c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\bin\Debug\Entit
 c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\obj\Debug\CRM.Data.csprojResolveAssemblyReference.cache
 c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\obj\Debug\CRM.Data.dll
 c:\Users\Atef\documents\visual studio 2015\Projects\CRM\CRM.Data\obj\Debug\CRM.Data.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\CRM.Data.dll.config
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\CRM.Data.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\CRM.Data.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\CRM.Domain.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\EntityFramework.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\CRM.Domain.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\EntityFramework.xml
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.csprojResolveAssemblyReference.cache
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.dll
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.pdb
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.V2.resources
+C:\Users\bilel\Source\Repos\sixiemesens\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.GenerateResource.Cache
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\CRM.Data.dll.config
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\CRM.Data.dll
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\CRM.Data.pdb
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\CRM.Domain.dll
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\EntityFramework.dll
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\CRM.Domain.pdb
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\EntityFramework.xml
+C:\Users\bouzir\Desktop\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bouzir\Desktop\CRM\CRM.Data\obj\Debug\CRM.Data.csprojResolveAssemblyReference.cache
+C:\Users\bouzir\Desktop\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.V2.resources
+C:\Users\bouzir\Desktop\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.GenerateResource.Cache
+C:\Users\bouzir\Desktop\CRM\CRM.Data\obj\Debug\CRM.Data.dll
+C:\Users\bouzir\Desktop\CRM\CRM.Data\obj\Debug\CRM.Data.pdb
+C:\CRM\CRM\CRM.Data\bin\Debug\CRM.Data.dll.config
+C:\CRM\CRM\CRM.Data\bin\Debug\CRM.Data.dll
+C:\CRM\CRM\CRM.Data\bin\Debug\CRM.Data.pdb
+C:\CRM\CRM\CRM.Data\bin\Debug\CRM.Domain.dll
+C:\CRM\CRM\CRM.Data\bin\Debug\EntityFramework.dll
+C:\CRM\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\CRM\CRM\CRM.Data\bin\Debug\CRM.Domain.pdb
+C:\CRM\CRM\CRM.Data\bin\Debug\CRM.Domain.dll.config
+C:\CRM\CRM\CRM.Data\bin\Debug\EntityFramework.xml
+C:\CRM\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\CRM\CRM\CRM.Data\obj\Debug\CRM.Data.csprojAssemblyReference.cache
+C:\CRM\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.CoreCompileInputs.cache
+C:\CRM\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.CopyComplete
+C:\CRM\CRM\CRM.Data\obj\Debug\CRM.Data.dll
+C:\CRM\CRM\CRM.Data\obj\Debug\CRM.Data.pdb

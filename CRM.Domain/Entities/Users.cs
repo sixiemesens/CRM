@@ -11,7 +11,7 @@ namespace CRM.Domain.Entities
     public class Users
     {
         [Key]
-        private int UserId { get; set; }
+        public int UserId { get; set; }
         public NomComplet UserName { get; set; }
         public string Email { get; set; }
         [DataType(DataType.Password)]
@@ -19,7 +19,9 @@ namespace CRM.Domain.Entities
         [Compare("MotDePasse")]
         public string ConfirmMotDePasse { get; set; }
         public Role role { get; set; }
-        public Companies company { get; set; }
-        public int companyFK { get; set; }
+        public  virtual Companies company { get; set; }
+       public int companyFK { get; set; }
+        public virtual Shops shop { get; set; }
+        public int shopFK { get; set; }
     }
 }

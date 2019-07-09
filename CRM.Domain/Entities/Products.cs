@@ -16,6 +16,6 @@ namespace CRM.Domain.Entities
         public string Photo { get; set; }
         public string ProductCategory { get; set; }
         public string ProductBrand { get; set; }
-
+        public ICollection<Stocks> stock { get; set; }
     }
 }
