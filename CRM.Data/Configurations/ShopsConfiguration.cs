@@ -18,7 +18,7 @@ namespace CRM.Data.Configurations
             //    .HasForeignKey(t => t.shopFK)
             //    .WillCascadeOnDelete(true);
 
-            HasRequired<Shops>(t => t.shop).WithMany(t => t.Users).HasForeignKey(t => t.shopFK);
+            HasRequired<Shops>(t => t.Shop).WithMany(t => t.Users).HasForeignKey(t => t.ShopFK);
 
 
         }

@@ -13,8 +13,8 @@ namespace CRM.Data.Configurations
         public CompanyConfiguration()
         {
            HasMany<Users>(t => t.Users)
-                .WithRequired(t => t.company)
-               .HasForeignKey(t => t.companyFK)
+                .WithRequired(t => t.Company)
+               .HasForeignKey(t => t.CompanyFK)
                 .WillCascadeOnDelete(true);
          
 

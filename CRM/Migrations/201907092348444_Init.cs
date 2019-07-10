@@ -76,24 +76,45 @@ namespace CRM.Migrations
                 .PrimaryKey(t => t.ProductId);
             
             CreateTable(
-                "dbo.Users",
+                "dbo.AspNetUsers",
                 c => new
                     {
-                        UserId = c.Int(nullable: false, identity: true),
-                        Email = c.String(),
-                        MotDePasse = c.String(),
-                        ConfirmMotDePasse = c.String(),
-                        role = c.Int(nullable: false),
-                        companyFK = c.Int(nullable: false),
-                        shopFK = c.Int(nullable: false),
-                        company_CompanyId = c.Int(),
-                        shop_ShopId = c.Int(),
+                        Id = c.String(nullable: false, maxLength: 128),
+                        CompanyFK = c.Int(nullable: false),
+                        ShopFK = c.Int(nullable: false),
+                        Email = c.String(maxLength: 256),
+                        EmailConfirmed = c.Boolean(nullable: false),
+                        PasswordHash = c.String(),
+                        SecurityStamp = c.String(),
+                        PhoneNumber = c.String(),
+                        PhoneNumberConfirmed = c.Boolean(nullable: false),
+                        TwoFactorEnabled = c.Boolean(nullable: false),
+                        LockoutEndDateUtc = c.DateTime(),
+                        LockoutEnabled = c.Boolean(nullable: false),
+                        AccessFailedCount = c.Int(nullable: false),
+                        UserName = c.String(nullable: false, maxLength: 256),
+                        Company_CompanyId = c.Int(),
+                        Shop_ShopId = c.Int(),
                     })
-                .PrimaryKey(t => t.UserId)
-                .ForeignKey("dbo.Companies", t => t.company_CompanyId)
-                .ForeignKey("dbo.Shops", t => t.shop_ShopId)
-                .Index(t => t.company_CompanyId)
-                .Index(t => t.shop_ShopId);
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Companies", t => t.Company_CompanyId)
+                .ForeignKey("dbo.Shops", t => t.Shop_ShopId)
+                .Index(t => t.UserName, unique: true, name: "UserNameIndex")
+                .Index(t => t.Company_CompanyId)
+                .Index(t => t.Shop_ShopId);
+            
+            CreateTable(
+                "dbo.AspNetUserClaims",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        UserId = c.String(nullable: false, maxLength: 128),
+                        ClaimType = c.String(),
+                        ClaimValue = c.String(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
+                .Index(t => t.UserId);
             
             CreateTable(
                 "dbo.Companies",
@@ -141,39 +162,6 @@ namespace CRM.Migrations
                 .PrimaryKey(t => t.ModuleId);
             
             CreateTable(
-                "dbo.AspNetUsers",
-                c => new
-                    {
-                        Id = c.String(nullable: false, maxLength: 128),
-                        Email = c.String(maxLength: 256),
-                        EmailConfirmed = c.Boolean(nullable: false),
-                        PasswordHash = c.String(),
-                        SecurityStamp = c.String(),
-                        PhoneNumber = c.String(),
-                        PhoneNumberConfirmed = c.Boolean(nullable: false),
-                        TwoFactorEnabled = c.Boolean(nullable: false),
-                        LockoutEndDateUtc = c.DateTime(),
-                        LockoutEnabled = c.Boolean(nullable: false),
-                        AccessFailedCount = c.Int(nullable: false),
-                        UserName = c.String(nullable: false, maxLength: 256),
-                    })
-                .PrimaryKey(t => t.Id)
-                .Index(t => t.UserName, unique: true, name: "UserNameIndex");
-            
-            CreateTable(
-                "dbo.AspNetUserClaims",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        UserId = c.String(nullable: false, maxLength: 128),
-                        ClaimType = c.String(),
-                        ClaimValue = c.String(),
-                    })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
-                .Index(t => t.UserId);
-            
-            CreateTable(
                 "dbo.AspNetUserLogins",
                 c => new
                     {
@@ -189,35 +177,34 @@ namespace CRM.Migrations
         
         public override void Down()
         {
+            DropForeignKey("dbo.AspNetUsers", "Shop_ShopId", "dbo.Shops");
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
-            DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
-            DropForeignKey("dbo.Users", "shop_ShopId", "dbo.Shops");
-            DropForeignKey("dbo.Users", "company_CompanyId", "dbo.Companies");
+            DropForeignKey("dbo.AspNetUsers", "Company_CompanyId", "dbo.Companies");
             DropForeignKey("dbo.CompanyModules", "ModuleId", "dbo.Modules");
             DropForeignKey("dbo.CompanyModules", "CompanyId", "dbo.Companies");
+            DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.Stocks", "ShopId", "dbo.Shops");
             DropForeignKey("dbo.Stocks", "ProductId", "dbo.Products");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
-            DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
-            DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.CompanyModules", new[] { "ModuleId" });
             DropIndex("dbo.CompanyModules", new[] { "CompanyId" });
-            DropIndex("dbo.Users", new[] { "shop_ShopId" });
-            DropIndex("dbo.Users", new[] { "company_CompanyId" });
+            DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
+            DropIndex("dbo.AspNetUsers", new[] { "Shop_ShopId" });
+            DropIndex("dbo.AspNetUsers", new[] { "Company_CompanyId" });
+            DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.Stocks", new[] { "ShopId" });
             DropIndex("dbo.Stocks", new[] { "ProductId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
             DropTable("dbo.AspNetUserLogins");
-            DropTable("dbo.AspNetUserClaims");
-            DropTable("dbo.AspNetUsers");
             DropTable("dbo.Modules");
             DropTable("dbo.CompanyModules");
             DropTable("dbo.Companies");
-            DropTable("dbo.Users");
+            DropTable("dbo.AspNetUserClaims");
+            DropTable("dbo.AspNetUsers");
             DropTable("dbo.Products");
             DropTable("dbo.Stocks");
             DropTable("dbo.Shops");
