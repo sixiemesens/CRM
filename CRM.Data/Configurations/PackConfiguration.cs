@@ -13,6 +13,7 @@ namespace CRM.Data.Configurations
         public PackConfiguration()
         {
             HasOptional<Offers>(s => s.Offers).WithRequired(p => p.Packs);
+            HasMany<Products>(t => t.Products).WithRequired(f => f.Pack).HasForeignKey(g => g.PackFK).WillCascadeOnDelete(true);
         }
     }
 }

@@ -15,7 +15,9 @@ namespace CRM.Domain.Entities
         public string OfferName { get; set; }
         public float OfferPrice { get; set; }
         public string OfferDescription { get; set; }
+        [DataType(DataType.Date)]
         public DateTime OfferStartDate { get; set; }
+        [DataType(DataType.Date)]
         public DateTime OfferEndDate { get; set; }
         
         public virtual Packs Packs { get; set; }
