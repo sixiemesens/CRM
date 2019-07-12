@@ -190,3 +190,6 @@ C:\Users\g534616\Source\Repos\CRM\CRM\bin\CRM.Data.pdb
 C:\Users\g534616\Source\Repos\CRM\CRM\obj\Debug\CRM.Presentation.csprojResolveAssemblyReference.cache
 C:\Users\g534616\Source\Repos\CRM\CRM\obj\Debug\CRM.dll
 C:\Users\g534616\Source\Repos\CRM\CRM\obj\Debug\CRM.pdb
+C:\Users\g534616\Source\Repos\CRM\CRM\obj\Debug\CRM.Migrations.InitialCreate.resources
+C:\Users\g534616\Source\Repos\CRM\CRM\obj\Debug\CRM.Presentation.csproj.GenerateResource.Cache
+C:\Users\g534616\Source\Repos\CRM\CRM\obj\Debug\CRM.Migrations.v0.resources

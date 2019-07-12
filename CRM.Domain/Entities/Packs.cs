@@ -15,6 +15,7 @@ namespace CRM.Domain.Entities
         public string PackName { get; set; }
         public DateTime PackStartDate { get; set; }
         public DateTime PackEndDate { get; set; }
+        public virtual Offers Offers { get; set; }
 
     }
 }

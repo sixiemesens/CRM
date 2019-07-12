@@ -1,13 +1,27 @@
-﻿using System.Collections.Generic;
+﻿using CRM.Domain.Entities;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace CRM.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
+
+        //Ajout propriété spécifique : Hafedh K.
+        [Required]
+        [Display(Name = "Nom")]
+        public string LastName { get; set; }
+        [Required]
+        [Display(Name = "Prénom")]
+        public string FirstName { get; set; }
+        [Required]
+        public string Matricule { get; set; }
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+
     }
 
     public class ExternalLoginListViewModel
@@ -42,6 +56,7 @@ namespace CRM.Models
     public class ForgotViewModel
     {
         [Required]
+        [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
@@ -64,6 +79,22 @@ namespace CRM.Models
 
     public class RegisterViewModel
     {
+        //Ajout propriété spécifique : Hafedh K.
+        [Required]
+        [Display(Name = "Nom")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Prénom")]
+        public string FirstName { get; set; }
+
+        [Required]
+        public string Matricule { get; set; }
+
+        [Required]
+        [Display(Name = "Role Utilisateur")]
+        public string UserRole { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -79,6 +110,7 @@ namespace CRM.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
     }
 
     public class ResetPasswordViewModel

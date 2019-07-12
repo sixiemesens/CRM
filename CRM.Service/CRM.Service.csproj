@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ReclamationService.cs" />
+    <Compile Include="CustomersService.cs" />
+    <Compile Include="IReclamationService.cs" />
+    <Compile Include="ICustomersService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

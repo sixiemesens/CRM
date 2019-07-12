@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Address.cs" />
-    <Compile Include="Entities\Claims.cs" />
+    <Compile Include="Entities\CategReclam.cs" />
     <Compile Include="Entities\Companies.cs" />
     <Compile Include="Entities\CompanyModules.cs" />
     <Compile Include="Entities\Customers.cs" />
@@ -60,15 +60,19 @@
     <Compile Include="Entities\Offers.cs" />
     <Compile Include="Entities\Packs.cs" />
     <Compile Include="Entities\Products.cs" />
+    <Compile Include="Entities\Reclamation.cs" />
     <Compile Include="Entities\Shops.cs" />
-    <Compile Include="Entities\Users.cs" />
+    <Compile Include="Entities\Stocks.cs" />
+    <Compile Include="Entities\TypeReclam.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

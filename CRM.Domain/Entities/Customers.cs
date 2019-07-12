@@ -18,7 +18,7 @@ namespace CRM.Domain.Entities
         [EmailAddress]
         public string Email { get; set; }
         public string CustomerPhone { get; set; }
-        //public List<Claims> Claims { get; set; }
+        public List<Reclamation> Reclamation { get; set; }
 
 
     }

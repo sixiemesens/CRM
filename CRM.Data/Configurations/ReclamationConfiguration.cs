@@ -8,10 +8,26 @@ using System.Threading.Tasks;
 
 namespace CRM.Data.Configurations
 {
-    public class ClaimsConfiguration: EntityTypeConfiguration<Claims>
+    public class ReclamationConfiguration : EntityTypeConfiguration<Reclamation>
     {
-        public ClaimsConfiguration()
+        public ReclamationConfiguration()
         {
+
+            HasRequired<Customers>(a => a.Customers)
+                .WithMany(b => b.Reclamation)
+                .HasForeignKey(c => c.CustomerId)
+                .WillCascadeOnDelete(true);
+
+            HasRequired<TypeReclam>(a => a.TypeReclam)
+                .WithMany(b => b.Reclamation)
+                .HasForeignKey(c => c.TypeReclamId)
+                .WillCascadeOnDelete(true);
+
+            HasRequired<CategReclam>(a => a.CategReclam)
+                .WithMany(b => b.Reclamation)
+                .HasForeignKey(c => c.CategReclamId)
+                .WillCascadeOnDelete(true);
+
             //Configurer la relation One to Many entre claims et users
             //HasRequired<Users>(s => s.Users)
             //               .WithMany(t => t.Claims)
@@ -24,6 +40,7 @@ namespace CRM.Data.Configurations
             //HasMany<Customers>(a => a.Customers)
             //    .WithMany(b => b.Claims)
             //    .Map(c => c.ToTable("ClaimCust"));
+
 
         }
     }

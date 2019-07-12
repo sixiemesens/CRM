@@ -15,5 +15,6 @@ C:\Users\g534616\Source\Repos\CRM\CRM.Domain\bin\Debug\EntityFramework.dll
 C:\Users\g534616\Source\Repos\CRM\CRM.Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\g534616\Source\Repos\CRM\CRM.Domain\bin\Debug\EntityFramework.xml
 C:\Users\g534616\Source\Repos\CRM\CRM.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\g534616\Source\Repos\CRM\CRM.Domain\obj\Debug\CRM.Domain.csprojResolveAssemblyReference.cache
 C:\Users\g534616\Source\Repos\CRM\CRM.Domain\obj\Debug\CRM.Domain.dll
 C:\Users\g534616\Source\Repos\CRM\CRM.Domain\obj\Debug\CRM.Domain.pdb

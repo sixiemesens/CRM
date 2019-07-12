@@ -6,112 +6,112 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using CRM.Data;
 using CRM.Domain.Entities;
+using CRM.Models;
 
 namespace CRM.Controllers
 {
-    public class ClaimsController : Controller
+    public class CategReclamsController : Controller
     {
-        private Context db = new Context();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Claims
+        // GET: CategReclams
         public ActionResult Index()
         {
-            return View(db.Claims.ToList());
+            return View(db.CategReclams.ToList());
         }
 
-        // GET: Claims/Details/5
+        // GET: CategReclams/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Claims claims = db.Claims.Find(id);
-            if (claims == null)
+            CategReclam categReclam = db.CategReclams.Find(id);
+            if (categReclam == null)
             {
                 return HttpNotFound();
             }
-            return View(claims);
+            return View(categReclam);
         }
 
-        // GET: Claims/Create
+        // GET: CategReclams/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Claims/Create
+        // POST: CategReclams/Create
         // Afin de déjouer les attaques par sur-validation, activez les propriétés spécifiques que vous voulez lier. Pour 
         // plus de détails, voir  http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ClaimId,ClaimType,Status,ClaimSubject,Description,ClaimStartDate")] Claims claims)
+        public ActionResult Create([Bind(Include = "CategReclamId,ReclamCateg")] CategReclam categReclam)
         {
             if (ModelState.IsValid)
             {
-                db.Claims.Add(claims);
+                db.CategReclams.Add(categReclam);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(claims);
+            return View(categReclam);
         }
 
-        // GET: Claims/Edit/5
+        // GET: CategReclams/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Claims claims = db.Claims.Find(id);
-            if (claims == null)
+            CategReclam categReclam = db.CategReclams.Find(id);
+            if (categReclam == null)
             {
                 return HttpNotFound();
             }
-            return View(claims);
+            return View(categReclam);
         }
 
-        // POST: Claims/Edit/5
+        // POST: CategReclams/Edit/5
         // Afin de déjouer les attaques par sur-validation, activez les propriétés spécifiques que vous voulez lier. Pour 
         // plus de détails, voir  http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ClaimId,ClaimType,Status,ClaimSubject,Description,ClaimStartDate")] Claims claims)
+        public ActionResult Edit([Bind(Include = "CategReclamId,ReclamCateg")] CategReclam categReclam)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(claims).State = EntityState.Modified;
+                db.Entry(categReclam).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(claims);
+            return View(categReclam);
         }
 
-        // GET: Claims/Delete/5
+        // GET: CategReclams/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Claims claims = db.Claims.Find(id);
-            if (claims == null)
+            CategReclam categReclam = db.CategReclams.Find(id);
+            if (categReclam == null)
             {
                 return HttpNotFound();
             }
-            return View(claims);
+            return View(categReclam);
         }
 
-        // POST: Claims/Delete/5
+        // POST: CategReclams/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Claims claims = db.Claims.Find(id);
-            db.Claims.Remove(claims);
+            CategReclam categReclam = db.CategReclams.Find(id);
+            db.CategReclams.Remove(categReclam);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

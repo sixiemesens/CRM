@@ -1,0 +1,26 @@
+﻿@model CRM.Domain.Entities.TypeReclam
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TypeReclam</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReclamType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReclamType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TypeReclamId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

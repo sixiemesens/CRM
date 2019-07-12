@@ -6,14 +6,14 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using CRM.Data;
 using CRM.Domain.Entities;
+using CRM.Models;
 
 namespace CRM.Controllers
 {
     public class CustomersController : Controller
     {
-        private Context db = new Context();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Customers
         public ActionResult Index()

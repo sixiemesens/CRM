@@ -3,12 +3,23 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.ComponentModel.DataAnnotations;
+using System;
+using CRM.Domain.Entities;
+using System.Collections.Generic;
 
 namespace CRM.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        //Ajout propriété spécifique : Hafedh K.
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public string Matricule { get; set; }
+        public string UserRole { get; set; }
+
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -30,8 +41,12 @@ namespace CRM.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<CRM.Domain.Entities.Claims> Claims { get; set; }
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.Reclamation> Reclamation { get; set; }
 
         public System.Data.Entity.DbSet<CRM.Domain.Entities.Customers> Customers { get; set; }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.TypeReclam> TypeReclams { get; set; }
+
+        public System.Data.Entity.DbSet<CRM.Domain.Entities.CategReclam> CategReclams { get; set; }
     }
 }

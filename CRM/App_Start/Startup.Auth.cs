@@ -26,6 +26,10 @@ namespace CRM
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Account/Login"),
+                //Ajout gestion de role par Hafedh KHEDHIRI
+                //LogoutPath = new PathString("/Account/LogOff"),
+                //ExpireTimeSpan = TimeSpan.FromMinutes(5.0),
+                //ReturnUrlParameter = "/Home/Index",
                 Provider = new CookieAuthenticationProvider
                 {
                     // Enables the application to validate the security stamp when the user logs in.

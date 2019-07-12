@@ -11,7 +11,8 @@ namespace CRM.Data.Conventions
     {
         public DateTimeConventions()
         {
-            Properties<DateTime>().Configure(t => t.HasColumnType("datetime2"));
+            Properties<DateTime>()
+                .Configure(t => t.HasColumnType("datetime2"));
         }
     }
 }
