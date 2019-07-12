@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - My CRM Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -24,8 +24,8 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Customers", "Create", "Customers")</li>
-                    <li>@Html.ActionLink("Reclamation", "Create", "Reclamations")</li>
+                    @*<li>@Html.ActionLink("Customers", "Create", "Customers")</li>*@
+                    @*<li>@Html.ActionLink("Reclamation", "Create", "Reclamations")</li>*@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -35,7 +35,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Copyright ESPRIT Application</p>
         </footer>
     </div>
 

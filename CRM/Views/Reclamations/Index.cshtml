@@ -4,7 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Ajout Type Réclamation", "Create", "TypeReclams")</li>
+        <li>@Html.ActionLink("Ajout Catégorie Réclamation", "Create", "CategReclams")</li>
+    </ul>
+</div>
+
+
+<h2>Gestion Réclamation</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
