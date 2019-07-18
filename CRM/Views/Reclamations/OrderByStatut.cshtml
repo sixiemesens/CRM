@@ -1,0 +1,69 @@
+﻿@model IEnumerable<CRM.Domain.Entities.Reclamation>
+
+@{
+    ViewBag.Title = "OrderByStatut";
+}
+
+<h2>Ordre par Statut</h2>
+
+<p>
+    @Html.ActionLink("Retour à la liste", "Index")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.CategReclam.ReclamCateg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Customers.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeReclam.ReclamType)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReclamSubject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReclamStartDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.CategReclam.ReclamCateg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customers.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeReclam.ReclamType)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReclamSubject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReclamStartDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReclamId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReclamId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReclamId })
+        </td>
+    </tr>
+}
+
+</table>

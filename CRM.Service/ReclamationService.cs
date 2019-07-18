@@ -21,8 +21,12 @@ namespace CRM.Service
 
         public int CountReclamation()
         {
-            return ut.getRepository<Reclamation>().GetAll().Count();
+            //Calcul nbre réclamation total;
+            int nbReclam = ut.getRepository<Reclamation>().GetAll().Count();
+            return nbReclam;
             //return GetAll().Count<Reclamation>();
         }
+
+
     }
 }

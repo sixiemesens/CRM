@@ -8,19 +8,99 @@ using System.Web;
 using System.Web.Mvc;
 using CRM.Domain.Entities;
 using CRM.Models;
+using CRM.Service;
+using Newtonsoft.Json;
+using System.Runtime.Serialization;
 
 namespace CRM.Controllers
 {
     public class ReclamationsController : Controller
     {
+        ReclamationService RS = new ReclamationService();
+     
         private ApplicationDbContext db = new ApplicationDbContext();
+
+        //DataContract for Serializing Data - required to serve in JSON format
+        [DataContract]
+        public class DataPoint
+        {
+            public DataPoint(string label, double y)
+            {
+                this.Label = label;
+                this.Y = y;
+            }
+
+            [DataMember(Name = "label")]
+            public string Label = "";
+
+            [DataMember(Name = "y")]
+            public Nullable<double> Y = null;
+        }
 
         // GET: Reclamations
         public ActionResult Index()
         {
+
+            List<DataPoint> data = new List<DataPoint>();
+
+            //List<Reclamation> dataPoints = new List<Reclamation>();
             var reclamation = db.Reclamation.Include(r => r.CategReclam).Include(r => r.Customers).Include(r => r.TypeReclam);
+              var dataPoints = reclamation.GroupBy(x => x.TypeReclam, x => x.Status , (groupKey, item) => new
+                {
+                    key = groupKey,
+                    count=item.Count()
+                }).ToList();
+
+            //var DataPoints = dataPoints.ToList();
+            //ViewBag.DataPoints = JsonConvert.SerializeObject(dataPoints);
+            foreach (var item in dataPoints)
+            {
+                data.Add(new DataPoint(item.key.ReclamType, item.count));
+            }
+
+            ViewBag.Statistique = JsonConvert.SerializeObject(data);
+
+                        //Afficher nomre total de réclamation
+            ViewBag.nb = RS.CountReclamation();
+
             return View(reclamation.ToList());
         }
+
+        public ActionResult OrderByStatut()
+        {
+            var reclamationStatut = from r in db.Reclamation
+                                    orderby r.Status ascending
+                                    select r;
+                return View(reclamationStatut);
+        }
+
+        //public ActionResult groupReclam()
+        //{
+        //    //List<Reclamation> group = new List<Reclamation>;
+        //    var groupList = db.Reclamation
+        //        .GroupBy(x => x.TypeReclam, x => x, (groupKey, item) => new
+        //    {
+        //        key = groupKey,
+        //        item = item.ToList()
+        //    }).ToList();
+
+        //    return View(groupList.ToList());
+        //}
+
+        [HttpPost]
+        public ActionResult Index(string searchString)
+        {
+            List<Reclamation> lists = new List<Reclamation>();
+            var reclamation = db.Reclamation.Include(r => r.CategReclam).Include(r => r.Customers).Include(r => r.TypeReclam);
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                lists = reclamation.ToList().Where(m => m.ReclamSubject.Contains(searchString)).ToList();
+        }
+
+            return View(lists);
+        }
+
 
         // GET: Reclamations/Details/5
         public ActionResult Details(int? id)
